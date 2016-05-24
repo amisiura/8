@@ -1,0 +1,78 @@
+
+body {
+  font-size: 15px;
+  div {
+    display: inline-block;
+    border-radius: 5px;
+  }
+}
+
+@color1:#333;
+@color2:#fff;
+@color3:#fff;
+
+@bckg1:#e0e0e0;
+@bckg2:#3b83c0;
+@bckg3:#404245;
+
+@hb1:#e8e8e8;
+@hb2:#458ac6;
+@hb3:#1b1c1d;
+
+@hc1:#333;
+@hc2:#fff;
+@hc3:#fff;
+
+@fs1:10px;
+@fs2:14px;
+@fs3:18px;
+
+@lh:20px;
+
+@pad1:2px 4px;
+@pad2:6px 12px;
+@pad3:10px 16px;
+
+
+
+.size(@padding,@fsz){
+  padding: @padding;
+  font-size: @fsz;
+}
+
+.colors(@col, @bcol){
+  color:@col;
+  background-color: @bcol;
+}
+
+
+.hover(@hcol, @hbcol){
+  color:@hcol;
+  background-color:@hbcol;
+}
+
+.s{
+  .colors(@color1,@bckg1);
+  .size(@pad1,@fs1);
+  &:hover{
+      .hover(@hc1,@hb1);
+  }
+  }
+
+
+.m{
+  .colors(@color2,@bckg2);
+  .size(@pad2,@fs2);
+  &:hover{
+    .hover(@hc2,@hb2);
+  }
+}
+
+
+.l{
+  .colors(@color3,@bckg3);
+  .size(@pad3,@fs3);
+  &:hover{
+    .hover(@hc3,@hb3);
+  }
+}

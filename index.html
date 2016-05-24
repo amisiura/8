@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Less example</title>
+    <link rel="stylesheet/less" href="app.less">
+    <script>
+        less = {
+            env: "development",
+            dumpLineNumbers: "comments"
+        };
+    </script>
+    <script src="less.min.js"></script>
+</head>
+<body>
+<div>
+    <div class="s">btn-default</div>
+    <div class="s">btn-info</div>
+    <div class="s">btn-secondary</div>
+
+    <div class="m">btn-default</div>
+    <div class="m">btn-info</div>
+    <div class="m">btn-secondary</div>
+
+    <div class="l">btn-default</div>
+    <div class="l">btn-info</div>
+    <div class="l">btn-secondary</div>
+</div>
+</body>
+</html>
